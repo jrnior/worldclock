@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Mundial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Relógio Mundial</h1>
+            <p>Acompanhe os horários ao redor do mundo em tempo real</p>
+        </div>
+
+        <div class="clocks-grid" id="clocksGrid">
+            <div class="add-timezone">
+                <button class="add-btn" onclick="openTimezoneSelector()">
+                    + Adicionar Fuso Horário
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="timezone-selector" id="timezoneSelector">
+        <div class="selector-content">
+            <div class="selector-header">
+                <h3>Escolher Fuso Horário</h3>
+                <button class="close-btn" onclick="closeTimezoneSelector()">&times;</button>
+            </div>
+            <input type="text" class="timezone-search" id="timezoneSearch" placeholder="Pesquisar cidade...">
+            <div class="timezone-list" id="timezoneList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
